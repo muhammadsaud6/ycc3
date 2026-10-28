@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cuisine Chef | School, Corporate, Coffee &amp; Catering Services</title>
+<meta name="description" content="Your Cuisine Chef provides K-12 school cafeterias, corporate dining, branded coffee shops and full-service catering with fresh, nutritious food.">
+<meta name="theme-color" content="#2e7d1f">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="pl-half pl-top"></div><div class="pl-half pl-bot"></div>
+  <div class="pl-orbs"><span>🥗</span><span>☕</span><span>🍎</span><span>🥐</span></div>
+  <div class="pl-content">
+    <div class="pl-logo">
+      <img class="base" src="logo.jpg" alt="">
+      <img class="fill" id="plFill" src="logo.jpg" alt="Your Cuisine Chef">
+      <i class="shine"></i>
+    </div>
+    <div class="pl-meter"><span id="plBar"></span></div>
+    <div class="pl-info"><em>Preparing something delicious</em><b id="plNum">0</b><small>%</small></div>
+  </div>
+</div>
+
+<!-- Scroll progress + custom cursor -->
+<div id="progress"></div>
+<div class="cursor" id="cursor"></div>
+
+<!-- Header -->
+<header id="header">
+  <div class="container nav">
+    <a href="#home" class="brand"><img src="logo.jpg" alt="Your Cuisine Chef logo"></a>
+    <nav id="menu">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#menu-showcase">Menu</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#process">Process</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary nav-cta magnetic">Get a Quote</a>
+    </nav>
+    <button id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="float-food" aria-hidden="true">
+    <span style="--x:8%;--y:22%;--d:0s">🥗</span>
+    <span style="--x:88%;--y:18%;--d:1s">🍎</span>
+    <span style="--x:78%;--y:70%;--d:2s">☕</span>
+    <span style="--x:12%;--y:72%;--d:1.5s">🥐</span>
+    <span style="--x:50%;--y:90%;--d:.5s">🍅</span>
+    <span style="--x:94%;--y:46%;--d:2.5s">🥕</span>
+  </div>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="pill reveal">🌿 Fresh • Nutritious • Delivered with Care</span>
+      <h1 class="reveal">Great Food, <span class="grad">Served Fresh</span> Every Single Day</h1>
+      <p class="reveal">From school cafeterias and corporate dining to branded coffee shops and catering, Your Cuisine Chef brings chef-quality meals and friendly service to every table.</p>
+      <div class="hero-btns reveal">
+        <a href="#contact" class="btn btn-primary magnetic">Request a Free Quote</a>
+        <a href="#services" class="btn btn-ghost magnetic">Explore Services →</a>
+      </div>
+      <div class="typed-line reveal">We specialise in <strong id="typed"></strong><span class="caret">|</span></div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="collage">
+        <div class="c-ring"></div>
+        <figure class="c-main"><img src="pasta.jpg" alt="Fresh pasta"></figure>
+        <figure class="c-a"><img src="chicken.jpg" alt="Grilled chicken"></figure>
+        <figure class="c-b"><img src="dessert.jpg" alt="Strawberry tart"></figure>
+        <figure class="c-c"><img src="salad.jpg" alt="Fresh salad"></figure>
+        <div class="badge bd1">⭐ 4.9 Rating</div>
+        <div class="badge bd2">🍽️ 10K+ Meals / Month</div>
+        <div class="badge bd3">🌿 100% Fresh Daily</div>
+      </div>
+    </div>
+  </div>
+  <a href="#services" class="scroll-down" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- Marquee -->
+<div class="marquee"><div class="track">
+  <span>🥗 Fresh Daily</span><span>🌱 Healthy Menus</span><span>☕ Barista Quality</span><span>🎓 School Friendly</span><span>🏢 Corporate Ready</span><span>🍽️ Full-Service Catering</span><span>👨‍🍳 Trained Chefs</span>
+  <span>🥗 Fresh Daily</span><span>🌱 Healthy Menus</span><span>☕ Barista Quality</span><span>🎓 School Friendly</span><span>🏢 Corporate Ready</span><span>🍽️ Full-Service Catering</span><span>👨‍🍳 Trained Chefs</span>
+</div></div>
+
+<!-- Services -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="head reveal"><span class="eyebrow">What We Do</span><h2>Our Services</h2><p>Tailored food programs built around the people you serve.</p></div>
+    <div class="cards">
+      <article class="card tilt reveal" style="--delay:0s">
+        <div class="icon">🏫</div>
+        <h3>Independent School Cafeterias K-12</h3>
+        <p>Nutritious, kid-friendly meals prepared fresh daily and served by a trained cafeteria team.</p>
+        <a href="#contact" class="more" data-service="School Cafeterias K-12">Learn more →</a>
+      </article>
+      <article class="card tilt reveal" style="--delay:.1s">
+        <div class="icon">🏢</div>
+        <h3>Corporate &amp; Business Dining</h3>
+        <p>On-site dining programs, daily lunches and executive meals for your workplace.</p>
+        <a href="#contact" class="more" data-service="Corporate & Business Dining">Learn more →</a>
+      </article>
+      <article class="card tilt reveal" style="--delay:.2s">
+        <div class="icon">☕</div>
+        <h3>Branded Coffee Shops</h3>
+        <p>Custom-branded coffee shops with barista-quality drinks, pastries and light bites.</p>
+        <a href="#contact" class="more" data-service="Branded Coffee Shops">Learn more →</a>
+      </article>
+      <article class="card tilt reveal" style="--delay:.3s">
+        <div class="icon">🍽️</div>
+        <h3>Catering</h3>
+        <p>Full-service catering for meetings, events and gatherings, with fresh menus and friendly staff.</p>
+        <a href="#contact" class="more" data-service="Catering">Learn more →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="container stat-grid">
+    <div class="stat reveal"><b data-count="150">0</b><span>+</span><p>Happy Clients</p></div>
+    <div class="stat reveal"><b data-count="12">0</b><span>+</span><p>Years Experience</p></div>
+    <div class="stat reveal"><b data-count="10000">0</b><span>+</span><p>Meals Monthly</p></div>
+    <div class="stat reveal"><b data-count="98">0</b><span>%</span><p>Satisfaction Rate</p></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="ring"></div>
+      <div class="about-emoji">👨‍🍳</div>
+      <div class="mini m1">🥦 Farm Fresh</div>
+      <div class="mini m2">✅ Food Safe</div>
+      <div class="mini m3">❤️ Made with Love</div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">About Us</span>
+      <h2>Food Service You Can <span class="grad">Trust</span></h2>
+      <p class="lead">Your Cuisine Chef is a full-service food management company built on fresh ingredients, trained teams and genuine hospitality.</p>
+      <ul class="checks">
+        <li>Menus designed by professional chefs &amp; nutrition-minded planners</li>
+        <li>Strict food-safety and hygiene standards at every site</li>
+        <li>Flexible programs that scale with your school, office or event</li>
+        <li>Friendly, uniformed and professionally trained staff</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary magnetic">Work With Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Menu showcase -->
+<section id="menu-showcase" class="section alt">
+  <div class="container">
+    <div class="head reveal"><span class="eyebrow">Taste the Difference</span><h2>Menu Highlights</h2><p>A peek at what we serve across our programs.</p></div>
+    <div class="tabs reveal">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="school">School</button>
+      <button class="tab" data-filter="corporate">Corporate</button>
+      <button class="tab" data-filter="coffee">Coffee</button>
+      <button class="tab" data-filter="catering">Catering</button>
+    </div>
+    <div class="menu-grid">
+      <div class="dish" data-cat="school"><div class="dish-img"><img src="pasta.jpg" alt="Whole-Grain Pasta Bowl" loading="lazy"><span>🍝</span></div><div class="dish-body"><h4>Whole-Grain Pasta Bowl</h4><p>Veggie marinara, fresh herbs.</p></div></div>
+      <div class="dish" data-cat="school"><div class="dish-img"><img src="fruit.jpg" alt="Fresh Fruit Smoothies" loading="lazy"><span>🍎</span></div><div class="dish-body"><h4>Fresh Fruit Smoothies</h4><p>Real seasonal fruit, blended fresh.</p></div></div>
+      <div class="dish" data-cat="corporate"><div class="dish-img"><img src="salad.jpg" alt="Executive Salad Box" loading="lazy"><span>🥗</span></div><div class="dish-body"><h4>Executive Salad Box</h4><p>Grilled protein, greens, house dressing.</p></div></div>
+      <div class="dish" data-cat="corporate"><div class="dish-img"><img src="sandwich.jpg" alt="Gourmet Sandwich Lunch" loading="lazy"><span>🥪</span></div><div class="dish-body"><h4>Gourmet Sandwich Lunch</h4><p>Artisan bread, premium fillings.</p></div></div>
+      <div class="dish" data-cat="coffee"><div class="dish-img"><img src="latte.jpg" alt="Signature Cappuccino" loading="lazy"><span>☕</span></div><div class="dish-body"><h4>Signature Cappuccino</h4><p>Barista-crafted, rich and smooth.</p></div></div>
+      <div class="dish" data-cat="coffee"><div class="dish-img"><img src="croissant.jpg" alt="Fresh Baked Pastries" loading="lazy"><span>🥐</span></div><div class="dish-body"><h4>Fresh Baked Pastries</h4><p>Baked fresh every morning.</p></div></div>
+      <div class="dish" data-cat="catering"><div class="dish-img"><img src="chicken.jpg" alt="Grilled Chicken Platter" loading="lazy"><span>🍗</span></div><div class="dish-body"><h4>Grilled Chicken Platter</h4><p>Perfect for events &amp; gatherings.</p></div></div>
+      <div class="dish" data-cat="catering"><div class="dish-img"><img src="dessert.jpg" alt="Dessert Table" loading="lazy"><span>🍰</span></div><div class="dish-body"><h4>Dessert Table</h4><p>Cakes, cookies and sweet bites.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="head reveal"><span class="eyebrow">Pricing</span><h2>Simple, Transparent Plans</h2><p>Choose a service, pick a plan, and we'll tailor the final quote to your headcount and menu.</p></div>
+    <div class="tabs reveal" id="priceTabs">
+      <button class="tab active" data-panel="p-school">🏫 School</button>
+      <button class="tab" data-panel="p-corp">🏢 Corporate</button>
+      <button class="tab" data-panel="p-coffee">☕ Coffee Shop</button>
+      <button class="tab" data-panel="p-cater">🍽️ Catering</button>
+    </div>
+
+    <div class="price-panel active" id="p-school">
+      <div class="plan"><h4>Essential</h4><div class="price"><sup>$</sup>3.25<small>/ meal</small></div><ul><li>Daily hot lunch</li><li>Seasonal fruit &amp; milk</li><li>Trained cafeteria staff</li><li>Monthly menu calendar</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="School Cafeterias K-12" data-plan="Essential">Choose Plan</a></div>
+      <div class="plan popular"><span class="tag">Most Popular</span><h4>Standard</h4><div class="price"><sup>$</sup>4.50<small>/ meal</small></div><ul><li>Everything in Essential</li><li>Salad &amp; deli bar</li><li>Allergy &amp; dietary options</li><li>Nutrition reporting</li><li>Parent menu portal</li></ul><a href="#contact" class="btn btn-primary plan-btn" data-service="School Cafeterias K-12" data-plan="Standard">Choose Plan</a></div>
+      <div class="plan"><h4>Premium</h4><div class="price"><sup>$</sup>6.00<small>/ meal</small></div><ul><li>Everything in Standard</li><li>Chef-crafted rotating menus</li><li>Snack &amp; breakfast service</li><li>Event &amp; sports-day meals</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="School Cafeterias K-12" data-plan="Premium">Choose Plan</a></div>
+    </div>
+
+    <div class="price-panel" id="p-corp">
+      <div class="plan"><h4>Daily Lunch</h4><div class="price"><sup>$</sup>9<small>/ meal</small></div><ul><li>Fresh lunch delivered daily</li><li>Rotating weekly menu</li><li>Eco-friendly packaging</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="Corporate & Business Dining" data-plan="Daily Lunch">Choose Plan</a></div>
+      <div class="plan popular"><span class="tag">Most Popular</span><h4>On-Site Dining</h4><div class="price"><sup>$</sup>14<small>/ meal</small></div><ul><li>On-site chef &amp; team</li><li>Self-serve stations</li><li>Dietary &amp; allergen options</li><li>Monthly feedback review</li></ul><a href="#contact" class="btn btn-primary plan-btn" data-service="Corporate & Business Dining" data-plan="On-Site Dining">Choose Plan</a></div>
+      <div class="plan"><h4>Executive</h4><div class="price"><sup>$</sup>22<small>/ meal</small></div><ul><li>Plated executive meals</li><li>Boardroom service</li><li>Premium ingredients</li><li>Dedicated account manager</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="Corporate & Business Dining" data-plan="Executive">Choose Plan</a></div>
+    </div>
+
+    <div class="price-panel" id="p-coffee">
+      <div class="plan"><h4>Coffee Kiosk</h4><div class="price"><sup>$</sup>2,500<small>setup</small></div><ul><li>Compact branded counter</li><li>Core coffee &amp; tea menu</li><li>Barista training</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="Branded Coffee Shops" data-plan="Coffee Kiosk">Choose Plan</a></div>
+      <div class="plan popular"><span class="tag">Most Popular</span><h4>Branded Café</h4><div class="price"><sup>$</sup>6,000<small>setup</small></div><ul><li>Full custom branding</li><li>Coffee, pastries &amp; light bites</li><li>Equipment &amp; supplies</li><li>Staffing &amp; training</li></ul><a href="#contact" class="btn btn-primary plan-btn" data-service="Branded Coffee Shops" data-plan="Branded Café">Choose Plan</a></div>
+      <div class="plan"><h4>Full Café</h4><div class="price">Custom<small>quote</small></div><ul><li>Complete café design &amp; build</li><li>Signature menu development</li><li>Full management &amp; reporting</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="Branded Coffee Shops" data-plan="Full Café">Request Quote</a></div>
+    </div>
+
+    <div class="price-panel" id="p-cater">
+      <div class="plan"><h4>Meetings</h4><div class="price"><sup>$</sup>15<small>/ person</small></div><ul><li>Sandwiches, salads &amp; drinks</li><li>Drop-off delivery</li><li>Disposable serveware</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="Catering" data-plan="Meetings">Choose Plan</a></div>
+      <div class="plan popular"><span class="tag">Most Popular</span><h4>Events</h4><div class="price"><sup>$</sup>25<small>/ person</small></div><ul><li>Hot buffet menu</li><li>Setup &amp; cleanup</li><li>Friendly service staff</li><li>Dessert &amp; beverages</li></ul><a href="#contact" class="btn btn-primary plan-btn" data-service="Catering" data-plan="Events">Choose Plan</a></div>
+      <div class="plan"><h4>Premium Gala</h4><div class="price"><sup>$</sup>40<small>/ person</small></div><ul><li>Plated multi-course dining</li><li>Chef stations</li><li>Full event staffing</li><li>Custom menu design</li></ul><a href="#contact" class="btn btn-ghost plan-btn" data-service="Catering" data-plan="Premium Gala">Choose Plan</a></div>
+    </div>
+    <p class="price-note reveal">* Prices are starting rates. Final quote depends on headcount, menu, location and service schedule.</p>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="section alt">
+  <div class="container">
+    <div class="head reveal"><span class="eyebrow">How It Works</span><h2>Simple, Smooth, Stress-Free</h2></div>
+    <div class="steps">
+      <div class="step reveal"><i>1</i><h4>Consult</h4><p>We learn your needs, budget and dietary requirements.</p></div>
+      <div class="step reveal" style="--delay:.1s"><i>2</i><h4>Plan</h4><p>Custom menu and service plan created for your site.</p></div>
+      <div class="step reveal" style="--delay:.2s"><i>3</i><h4>Launch</h4><p>Our trained team sets up and starts serving.</p></div>
+      <div class="step reveal" style="--delay:.3s"><i>4</i><h4>Improve</h4><p>Regular feedback keeps quality and satisfaction high.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="section why">
+  <div class="container">
+    <div class="head reveal light"><span class="eyebrow">Why Choose Us</span><h2>The Your Cuisine Chef Promise</h2></div>
+    <div class="why-grid">
+      <div class="why-item reveal"><span>🌿</span><h4>Always Fresh</h4><p>Prepared daily with quality ingredients.</p></div>
+      <div class="why-item reveal"><span>🛡️</span><h4>Safe &amp; Compliant</h4><p>Rigorous hygiene and allergen awareness.</p></div>
+      <div class="why-item reveal"><span>🎨</span><h4>Fully Customised</h4><p>Menus and branding tailored to you.</p></div>
+      <div class="why-item reveal"><span>🤝</span><h4>Reliable Team</h4><p>Professional, punctual and friendly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="head reveal"><span class="eyebrow">Testimonials</span><h2>What Our Clients Say</h2></div>
+    <div class="slider reveal" id="slider">
+      <div class="slides">
+        <blockquote class="slide active"><p>“The kids love the meals and parents love the quality. Our cafeteria has never been better.”</p><cite>— School Principal</cite></blockquote>
+        <blockquote class="slide"><p>“Daily lunches arrive fresh and on time. Our team looks forward to every meal.”</p><cite>— Corporate Office Manager</cite></blockquote>
+        <blockquote class="slide"><p>“Our branded coffee shop is now the heart of our campus. Fantastic drinks and service.”</p><cite>— Campus Director</cite></blockquote>
+        <blockquote class="slide"><p>“They catered our annual event flawlessly. Guests are still talking about the food.”</p><cite>— Event Organizer</cite></blockquote>
+      </div>
+      <div class="stars">★★★★★</div>
+      <div class="dots"></div>
+      <button class="arrow prev" aria-label="Previous">‹</button>
+      <button class="arrow next" aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section alt">
+  <div class="container narrow">
+    <div class="head reveal"><span class="eyebrow">FAQ</span><h2>Frequently Asked Questions</h2></div>
+    <div class="faq">
+      <div class="qa reveal"><button class="q">Do you handle allergies and dietary needs?<i>+</i></button><div class="a"><p>Yes. We plan menus with allergen awareness and can provide vegetarian, halal and other dietary options on request.</p></div></div>
+      <div class="qa reveal"><button class="q">Can the coffee shop carry our own branding?<i>+</i></button><div class="a"><p>Absolutely. We design and run custom-branded coffee shops with your name, colours and menu.</p></div></div>
+      <div class="qa reveal"><button class="q">What size events can you cater?<i>+</i></button><div class="a"><p>From small meetings to large gatherings. Tell us your guest count and we'll build the right plan.</p></div></div>
+      <div class="qa reveal"><button class="q">How quickly can we get started?<i>+</i></button><div class="a"><p>After a consultation and menu approval, most programs launch within a few weeks.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's Plan Your <span class="grad">Food Program</span></h2>
+      <p class="lead">Tell us about your school, office or event and we'll get back with a tailored proposal.</p>
+      <ul class="info">
+        <li><span>📞</span><div><b>Phone</b><a href="tel:+10000000000" id="phoneText">+1 (000) 000-0000</a></div></li>
+        <li><span>✉️</span><div><b>Email</b><a href="mailto:info@yourcuisinechef.com">info@yourcuisinechef.com</a></div></li>
+        <li><span>📍</span><div><b>Location</b><a href="#contact">Your City, Country</a></div></li>
+        <li><span>🕒</span><div><b>Hours</b><a href="#contact">Mon – Fri, 8:00 AM – 6:00 PM</a></div></li>
+      </ul>
+    </div>
+    <form id="form" class="form reveal" novalidate>
+      <div class="field"><input type="text" id="name" required placeholder=" "><label for="name">Full Name</label><small></small></div>
+      <div class="field"><input type="email" id="email" required placeholder=" "><label for="email">Email Address</label><small></small></div>
+      <div class="field"><input type="tel" id="phone" placeholder=" "><label for="phone">Phone (optional)</label><small></small></div>
+      <div class="field">
+        <select id="service" required>
+          <option value="" disabled selected hidden></option>
+          <option>School Cafeterias K-12</option>
+          <option>Corporate &amp; Business Dining</option>
+          <option>Branded Coffee Shops</option>
+          <option>Catering</option>
+          <option>Other</option>
+        </select><label for="service">Service Needed</label><small></small>
+      </div>
+      <div class="field"><textarea id="message" rows="4" required placeholder=" "></textarea><label for="message">Your Message</label><small></small></div>
+      <button type="submit" class="btn btn-primary magnetic full">Send Request</button>
+      <p class="ok" id="ok">✅ Thank you! Your request is ready, your email app will open to send it.</p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container foot-grid">
+    <div><img src="logo.jpg" alt="Your Cuisine Chef" class="foot-logo"><p>Fresh, nutritious and friendly food service for schools, workplaces and events.</p></div>
+    <div><h5>Services</h5><a href="#services">School Cafeterias</a><a href="#services">Corporate Dining</a><a href="#services">Coffee Shops</a><a href="#services">Catering</a></div>
+    <div><h5>Company</h5><a href="#about">About</a><a href="#process">Process</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a></div>
+    <div><h5>Newsletter</h5><form id="news"><input type="email" placeholder="Your email" required><button>Join</button></form><small id="newsMsg"></small></div>
+  </div>
+  <div class="copy container"><span>© <span id="year"></span> Your Cuisine Chef</span><span>Designed by <b>Muhammad Saud Javed</b></span></div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
